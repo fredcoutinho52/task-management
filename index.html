@@ -14,36 +14,22 @@
 <body>
   <header>
     <h1>Projects</h1>
-    <button>Create Task</button>
+    <button onclick="createCard()">Create Task</button>
   </header>
 
   <div class="cards-container">
+    <!-- modelo de card -->
     <div class="card">
-      <h4 class="card-title">Web Design</h4>
-      <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore quod corrupti doloremque, quos veritatis id earum modi dolorum alias incidunt corporis cumque placeat neque ab dignissimos quae aliquam eum?</p>
+      <input type="text" class="card-title" placeholder="Task title here">
+      <input type="text" class="card-description" placeholder="Task description here">
       <div class="card-actions">
         <button>Edit</button>
         <button>Delete</button>
       </div>
     </div>
-    <div class="card">
-      <h4 class="card-title">Web Design</h4>
-      <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore quod corrupti doloremque, quos veritatis id earum modi dolorum alias incidunt corporis cumque placeat neque ab dignissimos quae aliquam eum?</p>
-      <div class="card-actions">
-        <button>Edit</button>
-        <button>Delete</button>
-      </div>
-    </div>
-    <div class="card">
-      <h4 class="card-title">Web Design</h4>
-      <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore quod corrupti doloremque, quos veritatis id earum modi dolorum alias incidunt corporis cumque placeat neque ab dignissimos quae aliquam eum?</p>
-      <div class="card-actions">
-        <button>Edit</button>
-        <button>Delete</button>
-      </div>
-    </div>
+    <!-- final modelo de card -->
   </div>
-  
+
   <script src="app.js"></script>
 </body>
 </html>

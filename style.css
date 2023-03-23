@@ -5,8 +5,6 @@
   font-family: 'Sono', sans-serif;
 }
 
-/* roxo: #754be5 */
-
 /* header */
 header {
   width: 90%;
@@ -42,7 +40,21 @@ header button {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
+}
+
+.card:first-child {
+  display: none;
+}
+
+.card input {
+  border: none;
+  outline: none;
+}
+
+.card .card-title {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .card button {
