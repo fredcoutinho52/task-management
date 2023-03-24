@@ -23,11 +23,12 @@
       <input type="text" class="card-title" placeholder="Task title here">
       <input type="text" class="card-description" placeholder="Task description here">
       <div class="card-actions">
-        <button>Edit</button>
-        <button>Delete</button>
+        <button onclick="deleteCard(event)">Delete</button>
       </div>
     </div>
     <!-- final modelo de card -->
+
+    <p class="empty-text">You don't have any open tasks. Create a new one to start!</p>
   </div>
 
   <script src="app.js"></script>

@@ -47,6 +47,15 @@ header button {
   display: none;
 }
 
+.empty-text {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.empty-text.hide {
+  display: none;
+}
+
 .card input {
   border: none;
   outline: none;

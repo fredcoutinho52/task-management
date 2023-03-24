@@ -1,4 +1,12 @@
 function createCard() {
+  const emptyText = document.querySelector(".empty-text");
+
+  // 1 - adicionar o estilo ao elemento
+  // emptyText.style.display = "none";
+
+  // 2 - adicionar uma classe que tenha o estilo desejado
+  emptyText.classList.add("hide");
+
   // capturar o elemento modelo
   const elementModel = document.querySelector(".card");
 
@@ -10,4 +18,17 @@ function createCard() {
 
   // inserir o clone no container
   container.insertAdjacentElement("beforeend", card);
+}
+
+function deleteCard(event) {
+  const button = event.target;
+  const div = button.parentElement;
+  const card = div.parentElement;
+  card.remove();
+
+  const cards = document.querySelectorAll(".card");
+  if (cards.length === 1) {
+    const emptyText = document.querySelector(".empty-text");
+    emptyText.classList.remove("hide");
+  }
 }
